@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PrismaX Contributor Card</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div class="floating-token">
+  <img src="px-token.png" />
+</div>
+
+<div class="app">
+
+  <!-- HOME -->
+  <div class="screen active" id="home">
+    <h1>PrismaX Contributor Card</h1>
+    <p class="home-text">
+      this  is tool you can generate a premium 9:16 
+      contributor card that represents your role,
+      impact, and consistency inside the PrismaX ecosystem.
+      Answer a short quiz and export a share-ready card.
+    </p>
+    <button id="startBtn">Start</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="screen" id="quiz">
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <!-- CARD -->
+  <div class="screen" id="cardScreen">
+    <div class="card" id="card">
+
+      <div class="card-title">PrismaX Contributor Card</div>
+
+      <div class="avatar-wrap">
+        <img id="cardAvatar" class="avatar" />
+        <div id="cardName" class="user-name"></div>
+        <div id="cardRole" class="tier-badge"></div>
+      </div>
+
+      <div id="cardQuote" class="quote"></div>
+
+      <div class="stats">
+        <div><span>Contribution Time</span><span id="cTime"></span></div>
+        <div><span>Points</span><span id="cPoints"></span></div>
+        <div><span>Content</span><span id="cContent"></span></div>
+        <div><span>Messages</span><span id="cMessages"></span></div>
+        <div><span>Consistency</span><span id="cConsistency"></span></div>
+        <div><span>X</span><span id="cX"></span></div>
+        <div><span>Discord</span><span id="cDiscord"></span></div>
+      </div>
+
+      <div class="actions">
+        <button id="downloadBtn">Download</button>
+        <button id="shareBtn">Share on X</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
