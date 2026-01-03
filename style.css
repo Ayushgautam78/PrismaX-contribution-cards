@@ -240,4 +240,30 @@ button {
   opacity: 0.18;
   z-index: 0;
   pointer-events: none;
+
+}
+/* FOOTER CREDIT */
+.card-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.85;
+
+  background: linear-gradient(135deg, #ffe6a7, #cfa84f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-footer:hover {
+  opacity: 1;
+}
+
+/* Ensure visible in download */
+.card.export .card-footer {
+  opacity: 1;
 }
